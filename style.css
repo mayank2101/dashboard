@@ -176,6 +176,7 @@ nav .theme i {
   min-width: 190px;
   padding: 0 15px 0 2px;
   margin-right: 250px;
+  cursor: pointer;
 }
 nav .profile-details img {
   height: 40px;
@@ -196,12 +197,11 @@ nav .profile-details i {
   color: #0369d6;
 }
 
-.home-section .home-content{
+.home-section .home-content {
   position: relative;
   padding-top: 104px;
 }
-.home-content .overview-boxes{
-
+.home-content .overview-boxes {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -210,8 +210,7 @@ nav .profile-details i {
   margin-bottom: 26px;
 }
 
-.overview-boxes .box{
-
+.overview-boxes .box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -219,23 +218,23 @@ nav .profile-details i {
   background: #fff;
   padding: 15px 14px;
   border-radius: 12px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-.overview-boxes .box-topic{
+.overview-boxes .box-topic {
   font-size: 20px;
   font-weight: 500;
 }
-.home-content .box .number{
+.home-content .box .number {
   display: inline-block;
   font-size: 35px;
   margin-top: -6px;
   font-weight: 500;
 }
-.home-content .box .indicator{
+.home-content .box .indicator {
   display: flex;
   align-items: center;
 }
-.home-content .box .indicator i{
+.home-content .box .indicator i {
   height: 20px;
   width: 20px;
   background: #fff;
@@ -246,33 +245,131 @@ nav .profile-details i {
   font-size: 20px;
   margin-right: 5px;
 }
-.home-content .box .indicator .text{
+.home-content .box .indicator .text {
   font-size: 13px;
 }
-.home-content .box .bx-upload , .bxl-quora , .bx-dollar{
+.home-content .box .bx-upload,
+.bxl-quora,
+.bx-dollar {
   display: inline-block;
   font-size: 82px;
   height: 50px;
   width: 50px;
   background: #fff;
-  line-height: 50px ;
+  line-height: 50px;
   text-align: center;
   color: #66b0ff;
   border-radius: 2px;
   margin: 15px 0px 0px 6px;
 }
-.home-content .bxl-quora , .bx-dollar{
+.home-content .bxl-quora,
+.bx-dollar {
   margin-bottom: 37px;
   margin-right: 22px;
 }
-.overview-boxes .bor{
-  
+.overview-boxes .bor {
   margin-right: 0%;
-
 }
 
-.overview-boxes .bor2{
-
+.overview-boxes .bor2 {
   margin-right: 20%;
+}
 
+/* Recent submission boxes css here */
+
+.home-content .sales-boxes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-content .sales-boxes .recent-sales {
+  width: 51%;
+  background: #fff;
+  padding: 20px 30px;
+  margin: 0 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.home-content .sales-boxes .sales-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sales-boxes .box .title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.sales-boxes .sales-details li.topic {
+  font-size: 20px;
+  font-weight: 500;
+}
+.sales-boxes .sales-details li a {
+  font-size: 18px;
+  color: #333;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+.sales-boxes .box .button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.sales-boxes .box .button a {
+  color: #fff;
+  background: #0369d6;
+  padding: 4px 12px;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3 ease;
+  margin-top: 16px;
+}
+.sales-boxes .box .button a:hover {
+  background: #2289f7;
+}
+
+.home-content .sales-boxes .top-sales {
+  width: 23%;
+  background: #fff;
+  padding: 20px 60px;
+
+  margin: 0 320px 0 0;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.sales-boxes .top-sales li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.sales-boxes .top-sales li a img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-right: 30px;
+  background: #333;
+}
+
+.sales-boxes .top-sales li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.sales-boxes .top-sales li.product {
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+}
+.bx-right-arrow-alt{
+  margin-left: 10px;
+  font-size: 20px;
+  color: #2289f7;
 }
